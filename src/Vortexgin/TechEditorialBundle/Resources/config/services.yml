@@ -1,0 +1,11 @@
+services:
+    vortexgin.techeditorial.manager:
+        class: Vortexgin\TechEditorialBundle\Manager\TechEditorialManager
+        arguments:
+            - @vortexgin.techeditorial.manager.dictionary
+            - @vortexgin.core.manager.redis
+    vortexgin.techeditorial.manager.dictionary:
+        class: Vortexgin\TechEditorialBundle\Manager\DictionaryManager
+        arguments:
+            - @service_container
+            - Vortexgin\TechEditorialBundle\Entity\Dictionary

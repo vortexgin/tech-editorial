@@ -1,0 +1,26 @@
+vortexgin_tech_editorial_analyze:
+    path:     /analyze
+    defaults: { _controller: VortexginTechEditorialBundle:TechEditorial:analyze }
+    requirements:
+        _method: POST
+
+vortexgin_tech_editorial_dictionary_create:
+    path:     /dictionary
+    defaults: { _controller: VortexginTechEditorialBundle:Dictionary:create }
+    requirements:
+        _method: POST
+vortexgin_tech_editorial_dictionary_read:
+    path:     /dictionary
+    defaults: { _controller: VortexginTechEditorialBundle:Dictionary:read }
+    requirements:
+        _method: GET
+vortexgin_tech_editorial_dictionary_update:
+    path:     /dictionary/{id}
+    defaults: { _controller: VortexginTechEditorialBundle:Dictionary:update, id: 0 }
+    requirements:
+        _method: PATCH
+vortexgin_tech_editorial_dictionary_delete:
+    path:     /dictionary/{id}
+    defaults: { _controller: VortexginTechEditorialBundle:Dictionary:delete, id: 0 }
+    requirements:
+        _method: DELETE
